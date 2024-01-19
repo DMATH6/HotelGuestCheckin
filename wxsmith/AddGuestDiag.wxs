@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="AddGuestDiag">
+		<id_arg>0</id_arg>
+		<object class="wxGridSizer" variable="GridSizer1" member="no">
+			<rows>5</rows>
+			<object class="sizeritem">
+				<object class="wxListBox" name="ID_GUESTTITLELISTBOX1" variable="GuestTitleListBox" member="yes">
+					<content>
+						<item>Mr</item>
+						<item>Ms</item>
+						<item>Mrs</item>
+					</content>
+					<default>-1</default>
+					<size>33,60</size>
+					<font>
+						<size>12</size>
+					</font>
+				</object>
+				<flag>wxALL|wxFIXED_MINSIZE</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="FirstNameTextC" member="yes">
+					<value>Enter firstname</value>
+					<size>200,50</size>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="LastNAmeTextC" member="yes">
+					<value>Enter last name</value>
+					<size>200,50</size>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="PhoneNumTextCntrl" member="yes">
+					<value>Enter phone number</value>
+					<size>200,50</size>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxButton" name="ID_BUTTON2" variable="OkAddButton" member="yes">
+					<label>Add Guest</label>
+					<handler function="OnOkAddButtonClick" entry="EVT_BUTTON" />
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxButton" name="ID_BUTTON1" variable="BackToMainMenuButton" member="yes">
+					<label>Back</label>
+					<handler function="OnBackToMainMenuButtonClick" entry="EVT_BUTTON" />
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>
